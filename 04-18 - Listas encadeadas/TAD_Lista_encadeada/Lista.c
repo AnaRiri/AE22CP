@@ -128,7 +128,7 @@ void imprime(Lista *l) {
 // remove item após determinada posição
 void remove_item(Lista *l, int x) {
   Celula *anterior = busca_por_chave(l, x);
-  if(verifica_lista_vazia(l) || anterior == NULL) {
+  if(verifica_lista_vazia(l) || anterior == NULL || anterior->prox == NULL) {
     printf("Erro: a lista está vazia ou o item não existe.\n");
     return;
   }

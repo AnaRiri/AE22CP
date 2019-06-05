@@ -40,6 +40,10 @@ main() {
   remove_item(l, 15);
   imprime(l);
 
+  printf("\nTenta remover item após o 90:\n");
+  remove_item(l, 90);
+  imprime(l);
+
   printf("\nTamanho da lista: %d\n", tamanho_lista(l));
 
   libera_lista(l);
